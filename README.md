@@ -1,6 +1,6 @@
 # pig-game-javascript
 
-![alt text](https://github.com/vallendito/AdminHino/blob/master/dashboard.jpg)
+![alt text](https://github.com/vallendito/pig-game-javascript/blob/master/images.png)
 
 Build With :
 - HTML & CSS & JS
