@@ -70,6 +70,8 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
     document.querySelector('#score-' +activePlayer).textContent = scores[activePlayer];
     document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.player-'+ activePlayer + '-panel').classList.add('winner');
+    document.querySelector('.player-'+ activePlayer + '-panel').classList.remove('active');
 
     // Check if player won the game
 
