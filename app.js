@@ -71,13 +71,12 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         scores[activePlayer] += roundScore;
 
         // Update the UI
-
+        document.querySelector('#score-' +activePlayer).textContent = scores[activePlayer];
        
         // Check if player won the game
 
         if(scores[activePlayer] >= 20) {
             document.querySelector('#name-' +activePlayer).textContent = 'Winner!';
-            document.querySelector('#score-' +activePlayer).textContent = scores[activePlayer];
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-'+ activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-'+ activePlayer + '-panel').classList.remove('active');
@@ -118,7 +117,7 @@ function init() {
     scores = [0,0];
     activePlayer = 0;
     roundScore = 0;
-    gamePlaying = true;
+    gamePlaying = true; //state variable 
 
     document.querySelector('.dice').style.display = 'none'; //for setting css in JS
 
